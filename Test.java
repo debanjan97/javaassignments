@@ -5,7 +5,7 @@ public class Test
   public static void main(String[] args)throws Exception
   {
     String path = args[0];
-    System.out.println(args[0]);
+    //System.out.println(args[0]);
     Map<Character, Integer> char_count = new HashMap<Character, Integer>();
     File file = new File(path);
     BufferedReader br = new BufferedReader(new FileReader(file));
@@ -13,7 +13,7 @@ public class Test
     String st;
     //fw.write("hi");
     while((st = br.readLine()) != null){
-      System.out.println(st);
+      //System.out.println(st);
       for(int i=0; i<st.length(); i++)
       {
         if (char_count.containsKey(st.charAt(i))){
