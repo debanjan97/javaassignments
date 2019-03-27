@@ -1,14 +1,15 @@
-package debanjan.assignment.main;
-import debanjan.assignment.singleton.*;
-import debanjan.assignment.data.*;
+package debanjan.assignment.data;
 
-
-public class Test{
-	public static void main(String[] args) {
-		ClassOne objectOne = new ClassOne();
-		objectOne.printData();
-		objectOne.printLocalVariable();
-		ClassTwo objectTwo = ClassTwo.initString("Hello");
-		objectTwo.printData();
+public class ClassOne{
+	int IntVariable;
+	char CharVariable;
+	public void printData(){
+		System.out.println("IntVariable = "+IntVariable+" CharVariable = "+CharVariable);
+	}
+	public void printLocalVariable(){
+		int localVar1, localVar2;
+		//System.out.println("Var1 = "+localVar1+" Var2 = "+localVar2);
+		//localVar1 and localVar2 are not initialised
+		//Not possible to print
 	}
 }
