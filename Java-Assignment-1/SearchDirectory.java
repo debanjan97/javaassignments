@@ -19,9 +19,8 @@ public class SearchDirectory{
 		String s = "";
 		while((s = inputStream.readLine()) != null) {
 			String[] tokens = s.split(" ");
-			if(tokens[tokens.length - 1].contains(".")){
+			if(tokens[0].charAt(0) == '-'){
 				//Checking if it is a file
-				//file contains extension
 				listOfFiles.add(tokens[tokens.length - 1]);
 				//creating a list of files under home
 			}
@@ -53,3 +52,4 @@ public class SearchDirectory{
 
 	}
 }
+
