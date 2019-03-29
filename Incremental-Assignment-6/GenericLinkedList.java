@@ -1,4 +1,4 @@
-class Node<Type>{      //node structure of the linked list
+class Node<Type>{ 
     Type data;
     Node<Type> next;
 
